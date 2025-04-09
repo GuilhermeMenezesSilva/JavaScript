@@ -1,0 +1,5 @@
+console.log(8+5)
+console.log(3-3)
+console.log(8*8)
+console.log(50/4)
+console.log(50%4)
