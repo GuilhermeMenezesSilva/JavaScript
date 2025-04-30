@@ -1,35 +1,24 @@
-// Mostrando
-console.log(true)
-console.log(false)
-console.log(10 > 2)
-console.log(5 > 100)
+/*
+    Operadores de comparação:
+        > maior que
+        >= maior ou igual a
+        < menor que
+        <= menor ou igual a
+        == igual a (valor)
+        === igualdade estrita (valor e tipo)
+        != diferente de (valor)
+        !== diferente estrito (valor e tipo)
+*/ 
 
-console.log()
-
-// Validando
-console.log(typeof (true))
-console.log(typeof (false))
-console.log(typeof (10 > 2))
-console.log(typeof (5 > 100))
-
-console.log()
-
-// Comparação
 console.log(10 > 5)
 console.log(10 >= 10)
-
-console.log()
-
 console.log(10 < 5)
 console.log(10 <= 10)
-
-console.log()
-
 console.log(4 === 4)
+console.log('Matheus' !== "Matheus")
 
 console.log()
 
-console.log('Matheus' !== "Matheus")
 
 // Operadores lógicos
 console.log(true && true)

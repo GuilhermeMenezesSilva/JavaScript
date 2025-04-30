@@ -4,6 +4,20 @@ for (let numero = 0; numero < 101; numero++) {
 
 }
 
+// for in
+const frutas = ['Pera', 'Maçã', 'Uva']
+
+for (let i in frutas) {
+    console.log(frutas[i]) // Retorna o valor de acordo com o indice 
+}
+
+// for of
+const nome = 'Guilherme Menezes'
+
+for (let valor of nome) {
+    console.log(valor)
+}
+
 // while
 var n = 0;
 var x = 0;
