@@ -2,7 +2,7 @@
 
 function retornaFuncao(nome) {
     return function (sobrenome) {
-        return nome + sobrenome;
+        return nome + " " + sobrenome;
     }; // Função anonima, pois ela não tem nome
 }
 
