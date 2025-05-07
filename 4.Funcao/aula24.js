@@ -12,17 +12,17 @@ function criaPessoa(nome, sobrenome, altura, peso) {
         peso,
         imc() {
             const indice = this.peso / (this.altura ** 2)
-            return indice.toFixed(2)
+            return `Seu IMC é ${indice.toFixed(2)}`
         }
     }
 }
 
 const p1 = criaPessoa('Guilherme', 'Menezes', 1.82, 82)
 console.log(p1.fala('falando sobre JS'))
-console.log(`O IMC da pessoa um é: ${p1.imc()}`)
+console.log(p1.imc())
 
 console.log()
 
 const p2 = criaPessoa('Vinicius', 'Menezes', 1.90, 84)
-console.log(`O IMC da pessoa dois é: ${p2.imc()}`)
 console.log(p2.fala('falando sobre Java'))
+console.log(p2.imc())
