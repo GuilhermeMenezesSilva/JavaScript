@@ -22,18 +22,3 @@ pessoa1.getDataNascimento = function () {
     const dataAtual = new Date()
     return dataAtual.getFullYear() - this.idade
 }
-
-
-
-console.log("for in para obter valor ou chave")
-console.log("obter as chave")
-for (let chave in pessoa1) {
-    console.log(chave)
-}
-
-console.log("----------")
-
-console.log("obter os valores")
-for (const key in pessoa1) {
-    console.log(pessoa1[key])
-}
