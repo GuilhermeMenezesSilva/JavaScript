@@ -1,10 +1,14 @@
-// argumento opcional - não passar a mesma quantidade de argumento que está no parametro
-function soma(a, b) {
-    if (a === undefined || b === undefined) {
-        console.log("Essa função precisa ter dois argumentos");
-    } else {
-        return a + b;
-    }
+// Parâmentros de uma função
+
+// Passando valores para um paramentro:
+function soma(a, b){
+    console.log(a+b)
 }
-console.log(soma(1));
-console.log(soma(1, 2));
+soma(2,6)
+     // Valores que serão atribuidos aos parametros a e b
+
+// Atribuindo os valores ao parametro:
+function soma(a = 2, b = 6){
+    console.log(a+b)
+}
+soma()
