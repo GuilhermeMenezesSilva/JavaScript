@@ -1,18 +1,12 @@
-// Declaração padrão
-function falaOi() {
-    console.log("Oi")
+// Pertence ao escopo global
+let n = 10;
+
+function numero() {
+  // Pertence apenas ao escopo da função
+  let n = 20;
+  n++;
+  console.log(n);
 }
-falaOi()
 
-// Function expression
-const souUmDado = function () {
-    console.log("Sou um dado")
-}
-souUmDado()
-
-// Arrow function
-const primeiraArrow = () => {
-    console.log("Olá Mundo");
-};
-
-primeiraArrow();
+numero(); // Exibirá 21
+console.log(n); // Exibirá 10

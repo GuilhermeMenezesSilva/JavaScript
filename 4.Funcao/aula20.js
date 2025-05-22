@@ -1,7 +1,12 @@
-// return - retorna um valor e encerra a função
+// Escopo léxico
+const nome = "Guilherme"
 
-function sum(a, b) {
-    return a + b;
-    console.log("bom dia!"); // Não é executada
+function falaNome(){
+    const nome = "Menezes"
+    console.log(nome)
 }
-console.log(sum(5, 5));
+
+function usaFalaNome(){
+    falaNome()
+}
+usaFalaNome()

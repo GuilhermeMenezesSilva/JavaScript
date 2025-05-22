@@ -1,12 +1,10 @@
-// Pertence ao escopo global
-let n = 10;
-
-function numero() {
-  // Pertence apenas ao escopo da função
-  let n = 20;
-  n++;
-  console.log(n);
+// argumento opcional - não passar a mesma quantidade de argumento que está no parametro
+function soma(a, b) {
+    if (a === undefined || b === undefined) {
+        console.log("Essa função precisa ter dois argumentos");
+    } else {
+        return a + b;
+    }
 }
-
-numero(); // Exibirá 21
-console.log(n); // Exibirá 10
+console.log(soma(1));
+console.log(soma(1, 2));

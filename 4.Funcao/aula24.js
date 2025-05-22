@@ -1,28 +1,20 @@
-// Factory Functions
+// Constructor Functions
 
-function criaPessoa(nome, sobrenome, altura, peso) {
-    return {
-        nome,
-        sobrenome,
-        // Quando se tem uma função dentro de outra função ela se chama MÉTODO
-        fala(assunto) {
-            return `${this /*Se refere ao objeto que o chama*/.nome} está ${assunto}.`
-        },
-        altura,
-        peso,
-        imc() {
-            const indice = this.peso / (this.altura ** 2)
-            return `Seu IMC é ${indice.toFixed(2)}`
-        }
+function Pessoa(nome, sobrenome) {
+    // Atributos ou métodos privados, ou seja, não podem ser acessados com a notação de ponto
+    const Id = 123456
+    const metodoInterno = function () {
     }
+
+    // Atributos ou métodos publicos, ou seja, podem ser acessados com a notação de ponto
+    this.nome = nome
+    this.sobrenome = sobrenome
+
+    this.metodo = function () {
+        console.log(this.nome + ': sou um método')
+    };
 }
-
-const p1 = criaPessoa('Guilherme', 'Menezes', 1.82, 82)
-console.log(p1.fala('falando sobre JS'))
-console.log(p1.imc())
-
-console.log()
-
-const p2 = criaPessoa('Vinicius', 'Menezes', 1.90, 84)
-console.log(p2.fala('falando sobre Java'))
-console.log(p2.imc())
+        // new instancia o objeto anteriormente criado  
+const p1 = new Pessoa('Luiz', 'Miranda')
+const p2 = new Pessoa('Guilherme', 'Menezes')
+p1.metodo()

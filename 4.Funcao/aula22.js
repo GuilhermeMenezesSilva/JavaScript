@@ -1,13 +1,23 @@
-// Closure -> função que lembra onde foi criada
-
-function retornaFuncao(nome) {
-    return function (sobrenome) {
-        return nome + " " + sobrenome;
-    }; // Função anonima, pois ela não tem nome
+// IIFE 
+// Toca o escopo global:
+function qualquerCoisa() {
+    console.log(1223432)
 }
+qualquerCoisa()
 
-// O closure pode se alterar de função para função
-const funcao = retornaFuncao("Guilherme");
-const funcao2 = retornaFuncao("Vinicius");
+    // Não toca:
+    (function (idade, peso, altura) {
 
-console.log(funcao("Menezes"), funcao2("Santos"));
+        const sobrenome = 'Menezes'
+        function criaNome(nome) {
+            return nome + ' ' + sobrenome
+        }
+
+        function falaNone() {
+            console.log(criaNome('Guilherme'))
+        }
+        
+        falaNone()
+        console.log(idade, peso, altura)
+
+    })(20, 82, 1.82);
