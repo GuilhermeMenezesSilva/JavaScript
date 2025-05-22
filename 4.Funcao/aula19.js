@@ -1,14 +1,7 @@
-// Parâmentros de uma função
+// return - retorna um valor e encerra a função
 
-// Passando valores para um paramentro:
-function soma(a, b){
-    console.log(a+b)
+function sum(a, b) {
+    return a + b;
+    console.log("bom dia!"); // Não é executada
 }
-soma(2,6)
-     // Valores que serão atribuidos aos parametros a e b
-
-// Atribuindo os valores ao parametro:
-function soma(a = 2, b = 6){
-    console.log(a+b)
-}
-soma()
+console.log(sum(5, 5));
