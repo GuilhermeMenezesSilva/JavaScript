@@ -1,4 +1,4 @@
-console.log("Declaração de forma literal:")
+// Declaração de forma literal:
 const pessoa = {
     //  chave : valor
     nome: "Guilherme",
@@ -10,7 +10,7 @@ console.log(pessoa["sobrenome"]) // Útil para quando os dados vem de uma base d
 
 console.log("----------")
 
-console.log("Declaração com construtor:")
+// Declaração com construtor:
 const pessoa1 = new Object()
 pessoa1.nome = 'Rose',
 pessoa1.sobrenome = 'Aparecida',
