@@ -3,11 +3,14 @@ const app = express()
 const porta = 3000
 const routes = require('./routes/home')
 const path = require('path')
+const meuMiddleware = require('./src/middlewares/middlewares')
 
 app.use(express.static(path.resolve(__dirname, 'public')))
 
 app.set('views', path.resolve(__dirname, 'src', 'views'))
 app.set('view engine', 'ejs')
+
+app.use(meuMiddleware)
 
 app.use('/', routes)
 
